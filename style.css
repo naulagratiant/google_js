@@ -14,9 +14,9 @@ html, body {
 }
 
 body {
-	display:flex;
+	/*display:flex;
 	justify-content: center;
-	flex-direction: column;
+	flex-direction: column;*/
 }
 
 .underline:hover {
@@ -24,6 +24,12 @@ body {
 }
 
 /* HEADER */
+
+header {
+	position: absolute;
+	width:100%;
+	top: 0;
+}
 
 header ul{
 list-style-type: none;
@@ -78,7 +84,7 @@ header li {
 
 /* MAIN */
 
-#corps {
+.corps {
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -119,7 +125,7 @@ header li {
 	font-size: 16px;
 }
 
-#rech, #lucky{
+#rech, #lucky, #central{
 	padding: 0px 16px ;
 	text-align: center;
 	font-size: 13px;
@@ -134,7 +140,7 @@ header li {
 }
 
 
-#rech:hover,#lucky:hover {
+#rech:hover,#lucky:hover, #central:hover {
 	box-shadow: 0 1px 1px 0 grey;
 	color: black;
 	border: 1px solid #c6c6c6;
@@ -144,6 +150,8 @@ header li {
 
 footer {
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 #footer_left {
