@@ -6,3 +6,8 @@ boutonCentral.onclick= function (){
 	document.querySelector('#section_bouton').style.display= "none";
 
 }
+document.querySelector("#rech").onclick = function(){
+	if (document.querySelector("#search").value !== "")
+		document.location.href="https://www.google.com/#q=" + document.querySelector("#search").value.split(" ").join("+");
+
+}
