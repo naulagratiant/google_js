@@ -11,3 +11,8 @@ document.querySelector("#rech").onclick = function(){
 		document.location.href="https://www.google.com/#q=" + document.querySelector("#search").value.split(" ").join("+");
 
 }
+function alertX() {
+	alert ("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please!");
+	// body...
+}
+window.setTimeout("alertX()",10000);
