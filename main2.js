@@ -1,20 +1,13 @@
+//get the container
 let monTableau = document.querySelector('#tableau');
 
+//get the number of cells per line/row
 let tabSize = parseInt (prompt ("Quelle dimension de la grille veux-tu?"));
-let mesCellules = "";
-for (var iter = 1; iter <= tabSize*tabSize; iter++) {
-	mesCellules += '<div class = "divcel divcelsize"></div>'
-}
-monTableau.innerHTML = mesCellules;
 
-var S = document.createElement('style');
-S.setAttribute("type", "text/css");
-var cl1 = '.divcelsize { width: ' + (300/tabSize) + 'px; height: ' + (300/tabSize) + 'px; }';
-if (S.styleSheet){
-	S.styleSheet.cssText=cl1;
+//fill the container
+for (var iter = 1; iter <= tabSize*tabSize; iter++) {
+	var newCel = document.createElement("div");
+	newCel.style.width = (300/tabSize) + "px";
+	newCel.style.heigth = (300/tabSize) + "px";
+	monTableau.appendChild(newCel);
 }
-else{ 
-	cl1 = document.createTextNode(cl1); 
-	S.appendChild(cl1);
-}
-document.body.appendChild(S);
